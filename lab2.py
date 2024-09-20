@@ -22,23 +22,7 @@ plt.title('Dot Plot of Control and Treatment Groups')
 plt.xlabel('Value')
 plt.grid(True, axis='x', linestyle='--', alpha=0.7)
 plt.legend()
-
 # Show plot
 plt.show()
-# Calculate statistics 
-Mean = np.mean(control_group)
-Median = np.median(control_group)
-trimmed_mean = stats.trim_mean(control_group, proportiontocut=0.1)
-# Print out the calculated statistics
-print("Control group mean is =", Mean)
-print("control  group median is =", Median)
-print("control group 10% Trimmed Mean:", trimmed_mean)
-# Calculate statistics 
-Mean = np.mean(treatment_group)
-Median = np.median(treatment_group)
-trimmed_mean = stats.trim_mean(treatment_group, proportiontocut=0.1)
-# Print out the calculated statistics
-print("treatment group mean is =", Mean)
-print("treatment  group median is =", Median)
-print("treatment group 10% Trimmed Mean:", trimmed_mean)
+
 
